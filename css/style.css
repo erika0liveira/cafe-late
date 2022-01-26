@@ -1,0 +1,249 @@
+@import url(reset.css);
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --azul-acinzentado: #c8d8e4;
+    --azul-agua: #69b3a2;
+    --azul-agua-variacao: #509685;
+    --cinza: #f2f2f2;
+    --cinza-escuro: #292929;
+    --verde-petroleo: #2b6777;
+    --rosa: #2c1717;
+
+    --texto-titulo: 'Dancing Script', cursive;
+    --texto-corpo: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--cinza);
+    font-family: var(--texto-corpo), 'icones';
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    padding: 0;
+    border: none;
+    background-color: unset;
+}
+
+.container {
+    padding: 8px 16px;
+}
+
+.menu-cabecalho {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul-agua-variacao);
+    width: 60vw;
+    height: 100vh;
+    margin-top: 128px;
+    position: absolute;
+    left: -100vw;
+    transition: .35s;
+}
+
+.menu-cabecalho--ativo {
+    left: 0;
+    transition: .25s;
+}
+
+.menu-cabecalho__logo {
+    width: 118px;
+    align-self: center;
+    padding: 16px;
+}
+
+.menu-cabecalho__link {
+    height: 64px;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.menu-cabecalho__link--ativo {
+    color: var(--preto);
+    border-left: 8px solid var(--preto);
+}
+
+.menu-cabecalho__link::before {
+    font-family: "Font Awesome 5 free"; 
+    font-weight: 700;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+    position: absolute;
+    left: 24px;
+    color: var(--cinza-escuro);
+}
+
+.menu-cabecalho__link--home::before {
+    content: "\f015";
+}
+
+.menu-cabecalho__link--cafe::before {
+    content: "\f54e";
+}
+
+.menu-cabecalho__link--cachorros::before {
+    content: "\f6d3";
+}
+
+.menu-cabecalho__link--contato::before {
+    content: "\f879";
+}
+
+.menu-cabecalho__link--adote::before {
+    content: "\f1b0";
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    padding: 20px;
+    background-color: var(--azul-agua);
+}
+
+.cabecalho__menu {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.cabecalho__logo {
+    width: 80px;
+    padding: 10px;
+}
+
+.titulo {
+    font-family: var(--texto-titulo);
+    font-size: 2rem;
+    text-align: center;
+    color: var(--preto);
+    padding: 15px;
+}
+
+.texto {
+    font-family: var(--texto-corpo);
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--preto);
+    line-height: 1.5rem;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--azul-agua);
+}
+
+.rodape__logo {
+    width: 80px;
+    padding: 10px;
+}
+
+.rodape__social {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.rodape__midia {
+    display: block;
+    width: 42px;
+}
+
+.rodape__midia i{
+    font-size: 1.75rem;
+    color: var(--preto);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 16px 32px;
+    }
+
+    .cabecalho__menu {
+        display: none;
+    }
+    
+    .menu-cabecalho {
+        flex-direction: row;
+        background-color: unset;
+        width: 80vw;
+        height: auto;
+        position: unset;
+        left: unset;
+        align-items: center;
+        margin-top: 0;
+        justify-content: space-evenly;
+        padding: 10px 30px;
+    }
+    
+    .menu-cabecalho--ativo {
+        display: none;
+    }
+    
+    .menu-cabecalho__logo {
+        display: none;
+    }
+    
+    .menu-cabecalho__link {
+        display: flex;
+        height: 0;
+        padding-left: 0;
+        justify-content: space-evenly;
+        font-weight: unset;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+    .menu-cabecalho__link--ativo {
+        color: unset;
+        border: 0;
+    }
+    
+    .menu-cabecalho__link::before {
+        display: none;
+    }
+    
+    .menu-cabecalho__link--home::before {
+        display: none;
+    }
+    
+    .menu-cabecalho__link--cafe::before {
+        display: none;
+    }
+    
+    .menu-cabecalho__link--cachorros::before {
+        display: none;
+    }
+    
+    .menu-cabecalho__link--contato::before {
+        display: none;
+    }
+    
+    .menu-cabecalho__link--adote::before {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .container {
+        padding: 32px 64px;
+    }
+
+    .menu-cabecalho {        
+        padding: 10px 100px;
+    }
+    
+}
