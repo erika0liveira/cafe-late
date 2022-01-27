@@ -181,7 +181,27 @@ img {
     }
 
     img {
-        width: 45vw;
+        width: 55%;
+        padding: 0;
+    }
+
+    .produtos__box {
+        width: 1024px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .titulo--produtos {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .produtos__conteudo {
+        width: 40%;
     }
 
     .institucional {
