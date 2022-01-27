@@ -243,13 +243,13 @@ button {
 
     .cabecalho {
         flex-direction: unset;
-        width: unset;
         height: unset;
         position: unset;
         left: unset;
         align-items: unset;
         margin-top: unset;
         justify-content: unset;
+        width: 100%;
         padding: 20px;
     }
 

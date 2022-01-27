@@ -223,4 +223,8 @@ img {
     .institucional__mapa {
         width: 70%;
     }
+
+    .rodape {
+        width: 100%;
+    }
 }
