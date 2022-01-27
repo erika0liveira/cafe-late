@@ -104,7 +104,6 @@ button {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
     padding: 20px;
     background-color: var(--azul-agua);
 }
@@ -242,8 +241,27 @@ button {
         padding: 32px 64px;
     }
 
+    .cabecalho {
+        flex-direction: unset;
+        width: unset;
+        height: unset;
+        position: unset;
+        left: unset;
+        align-items: unset;
+        margin-top: unset;
+        justify-content: unset;
+        padding: 20px;
+    }
+
+    .cabecalho__box {
+        width: 1024px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+    }
+
     .menu-cabecalho {        
-        padding: 10px 100px;
+        padding: 0 50px;
     }
     
 }
