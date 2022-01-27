@@ -101,6 +101,10 @@ img {
     text-align: center;
 }
 
+.rodape {
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
 
     .produtos {
@@ -109,15 +113,29 @@ img {
         justify-content: space-between;
     }
 
+    .produtos__box {
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .titulo--produtos {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
     .titulo--produtos {
         width: 100%;
         text-align: left;
     }
-
-    .produtos__conteudo {
-        width: 40vw;
-    }
     
+    .produtos__conteudo {
+        width: 45%;
+    }
+
     .texto--produtos {
         padding: 10px;
     }
@@ -127,7 +145,8 @@ img {
     }
     
     img {
-        width: 50vw;
+        width: 55%;
+        padding: 0;
     }
 
     .beneficios ul {
@@ -149,7 +168,10 @@ img {
         text-align: center;
         font-size: 1.25rem;
     }
-    
+
+    .rodape {
+        text-align: center;
+    }    
 }
 
 @media screen and (min-width: 1024px) {
@@ -185,14 +207,8 @@ img {
         padding: 0;
     }
 
-    .produtos__box, .institucional__box {
+    .produtos__box {
         width: 1024px;
-        position: relative;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
     }
 
     .titulo--produtos {
@@ -210,6 +226,16 @@ img {
         justify-content: space-between;
         align-items: center;
     }
+
+    .institucional__box {
+        width: 1024px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
     
     .titulo--institucional {
         width: 100%;
@@ -224,7 +250,4 @@ img {
         width: 70%;
     }
 
-    .rodape {
-        width: 100%;
-    }
 }
