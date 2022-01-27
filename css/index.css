@@ -154,6 +154,12 @@ img {
 
 @media screen and (min-width: 1024px) {
 
+    .sobre-cafeteria__box {
+        width: 1024px;
+        position: relative;
+        margin: 0 auto;
+    }
+
     .beneficios ul {
         display: flex;
         justify-content: space-evenly;

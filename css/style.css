@@ -238,7 +238,7 @@ button {
 @media screen and (min-width: 1024px) {
     
     .container {
-        padding: 32px 64px;
+        padding: 20px;
     }
 
     .cabecalho {
