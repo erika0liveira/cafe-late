@@ -185,7 +185,7 @@ img {
         padding: 0;
     }
 
-    .produtos__box {
+    .produtos__box, .institucional__box {
         width: 1024px;
         position: relative;
         margin: 0 auto;
